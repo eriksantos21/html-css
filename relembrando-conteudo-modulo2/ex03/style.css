@@ -1,0 +1,45 @@
+@charset "UTF-8";
+ /*Em HTML é id = em CSS é # (Após o uso, não posso usar o id principal em outro seletor - ÚNICO.)
+   Em HTML é class = em CSS é . (Posso usar vários elementos com a mesma classe - MÚLTIPLO.)
+   Sempre dê nomes as class e id de acordo com a função enuca formato.
+   o "span" é só seleciona um trecho do texto para adicionarmos as class.
+   Podemos usar mais de uma class ao mesmo tempo, dando um espaço entre elas.
+   Consigo também colocar id e class no mesmo elemento.
+   Posso usar o mesmo id em outra pag de conf HTML.
+   Existe uma herânça entre eles, o id sobrepõe a class.
+   */
+body{
+    background-image: linear-gradient(to right, rgb(209, 217, 209), rgb(80, 183, 80));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:green;
+}
+
+h1#principal{
+    text-align: center;
+    background-color:green;
+    color: white;
+}
+
+h2{
+    color: rgb(48, 99, 48);
+}
+
+h2.basico{
+    color: rgb(167, 167, 4);
+}
+
+.intermediario{
+    color: rgba(171, 112, 2, 0.662);
+}
+
+.avancado{
+    color: rgba(255, 0, 0, 0.482);
+    font-weight: bold
+}
+
+.destaque{
+    background-color: rgba(164, 164, 48, 0.504);
+}

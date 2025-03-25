@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Audios</h1>
+    
+
+        <audio preload="auto" </audio autoplay controls loop> <!-- o auto é perigoso. Ele só vai considerar que o site terminou de carregar quando o áudio todo carregar, e geralmente tem arquivos que são pesados. --> <!-- "Loop" é quando o áudio acaba e queremos repeti-lo denovo automaticamente.-->
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.wav" type="audio/wav">
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <!--Desses três, o navegador irá carregar o arquivo de cima para baixo, caso não consiga ler o primeiro. Então tomar cuidado nas ordens dos arquivos. Tente evitar de usar arquivos WAV, pois são grandes e muito pesados.-->
+        </audio>
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. 
+            <a href="">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Fontes Externas</title>
+    <style>
+        
+
+        /*Regra e seletor especial chamada font-face*/
+
+        @font-face{
+            font-family: 'Love Larry';
+            src: url(fonts/love\ story\ ttf.ttf);
+            font-family: 'Urban Graffiti';
+            src: url(fonts/Urban\ Graffiti\ PERSONAL\ USE\ ONLY.ttf)
+    
+    
+
+            /*Tem algumas fontes que disponibilizam o formato ttf e otf, podemos colocar os dois tipos no nosso site, pois caso o navegador não lê um formato ele poderá utilizar o outro. Para usarmos, temos que expecificar os tipos de format():
+            opentype (otf)
+            truetype (ttf)
+            embedded-opentype
+            opentype-aat (Apple Advanced Typography)
+            sgv
+
+              */
+
+     
+        }
+        body{ /* Posições do degradê: to (top, bottom, left ou right)*/
+            background-image: linear-gradient(to right, white, green);
+        }
+
+        body {
+            font-family: 'Open Sans', Helvetica, sans-serif;
+            font-weight: normal;
+            
+           
+        }
+        h1{
+            font-family:'Urban Graffiti','Love Larry', Courier, monospace;
+            font-weight: normal;
+            font-size: normal;
+            background-image: linear-gradient(to left, blue, white);
+        }
+    </style>
+</head>
+<body>
+    <h1 class=".single-color">Urban Graffiti</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci at nobis amet illum reprehenderit, deserunt expedita eligendi voluptatum quam ea architecto. Consequuntur quasi quos perferendis repellat iusto, neque numquam at.</p>
+    
+</body>
+</html>
