@@ -78,6 +78,7 @@ section.imagem{
 section.imagem > p {
     background-color: rgb(0,0, 0, 0.253);
     display: inline-block; /*essa função faz com que a caixa se adapta ao tamanho do conteúdo*/
+    padding: 5px;
 } /*configurações de todos os parágrafos que tiverem a imagem*/
 
 footer{
