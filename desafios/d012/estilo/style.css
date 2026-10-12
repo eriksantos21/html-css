@@ -1,1 +1,64 @@
 @charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+
+} /*configurações gerais*/
+
+html, body{
+    min-height: 100vh; /*o tamanho mínimo da minha viewport. Pode ser 100% também. vh: altura da minha viewport (height), vw: largura da minha viewport* (width)*/ 
+    background-color: darkgray;
+} /*configurações em comuns. Tanto html, quanto body*/
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center; /*centraliza o texto (o título)*/
+}
+
+header > h1{
+    padding-top: 50px; /*alteração do padding somente em cima*/
+    /*text-transform: uppercase; deixa todas as letras maiúsculas*/
+    font-variant: small-caps; /*na variante de fontes, o small-caps também deixa a letra maiúscula, porém destaca a primeira letra da palavra*/
+}
+
+header > p{
+    padding-bottom: 50px; /*alteração do somente padding em baixo*/
+    
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none; /* link sem sublinhado*/
+
+} /*configuração do link, serve para o cabeçalho e o rodapé*/
+
+header a:hover, footer a:hover{
+    text-decoration: underline; /*sublinhado aparece somente quando o mouse passar por cima do link*/
+
+} /*interações do link, serve para o cabeçalho e o rodapé*/
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+} /*irá servir tanto para a section normal, quanto para a section imagem*/
+section.normal{
+    background-color: white;
+    color: black;
+
+}
+
+section.imagem{
+    background-color: rgb(51,51,51);
+    color:white;
+
+
+
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
